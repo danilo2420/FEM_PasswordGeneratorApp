@@ -2,7 +2,6 @@
 
 .container {
     margin: 65px 16px;
-    border: solid orange 1px;
 
     display: flex;
     flex-direction: column;
@@ -14,6 +13,7 @@
     color: var(--grey600);
 }
 
+/* Top section */
 .password {
     display: flex;
     justify-content: space-between;
@@ -30,4 +30,29 @@
 
 .password__copy__icon {
     width: 17.5px;
+}
+
+/* Form */
+.generate {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.generate__charLength {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.generate__charLength__output {
+    padding-right: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generate__charLength__output__value {
+    color: var(--green200);
 }
