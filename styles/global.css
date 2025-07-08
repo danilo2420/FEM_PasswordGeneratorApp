@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Jet Brains Mono';
+    src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Jet Brains Mono Italic';
+    src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+:root {
+    /* Colors */
+    --white: #FFF;
+    --back: #000;
+
+    --grey950: #08070B;
+    --grey900: #14131B;
+    --grey850: #18171F;
+    --grey800: #24232C;
+    --grey700: #54535B;
+    --grey600: #817D92;
+    --grey200: #E6E5EA;
+
+    --green200: #A4FFAF;
+    --yellow300: #F8CD65;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: 'Jet Brains Mono';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typographies */
+.tp1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0px;
+}
+
+.tp2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.tp3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.tp4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
