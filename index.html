@@ -8,6 +8,7 @@
   <title>Password generator app</title>
 
   <link rel="stylesheet" href="styles/mobile.css">
+  <script defer src="scripts/style.js"></script>
 </head>
 <body>
   <div class="container">
@@ -32,7 +33,11 @@
           <div class="generate__charLength__output__value tp2">0</div>
         </div>
         <div class="generate__charLength__sliderContainer">
-          <input type="range" class="slider">
+          <input 
+            type="range" 
+            class="slider"
+            max="100"
+            min="0">
         </div>
       </div>
 
