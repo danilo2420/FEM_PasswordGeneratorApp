@@ -30,10 +30,8 @@ body {
     min-height: 100vh;
 
     font-family: 'Jet Brains Mono';
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--grey950);
+    color: var(--white);
 }
 
 /* Typographies */
@@ -63,4 +61,18 @@ body {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0px;
+}
+
+/* General styles */
+.sharpbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+
+    background-color: var(--grey800);
+}
+
+/* Modifiers */
+.password--disabled {
+    color: var(--grey700);
 }

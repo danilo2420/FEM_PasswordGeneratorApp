@@ -7,9 +7,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Password generator app</title>
 
-  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/mobile.css">
 </head>
 <body>
-  <div>Hello</div>
+  <div class="container">
+    <div class="title tp4">Password Generator</div>
+    <div class="password sharpbox">
+      <div class="password__value tp2 password--disabled">P4$5W0rD!</div>
+      <div class="password__copy">
+        <div class="password__copy__text tp4">COPIED</div>
+        <!--<div class="password__copy__icon">Icon</div>-->
+        <img 
+          class="password__copy__icon"
+          src="assets/images/icon-copy.svg">
+      </div>
+    </div>
+    <div class="generate sharpbox">Generate form here</div>
+  </div>
 </body>
 </html>
