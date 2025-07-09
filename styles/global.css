@@ -76,3 +76,12 @@ body {
 .password--disabled {
     color: var(--grey700);
 }
+
+.checkbox--active {
+    background-color: var(--green200);
+    border-color: var(--green200) !important;
+}
+
+.checkbox--active img {
+    visibility: visible !important;
+}

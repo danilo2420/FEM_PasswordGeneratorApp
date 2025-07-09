@@ -105,4 +105,14 @@
     border: solid var(--white) 2px;
     width: 16px;
     height: 16px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate__options__item__checkbox img {
+    visibility: hidden;
 }
