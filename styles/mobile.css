@@ -87,3 +87,22 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* Checkboxes */
+.generate__options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.generate__options__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.generate__options__item__checkbox {
+    border: solid var(--white) 2px;
+    width: 16px;
+    height: 16px;
+}
