@@ -140,8 +140,12 @@
 
 .generate__generate__strength__boxes {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
+.generate__generate__strength__boxes__text {
+    margin-right: 8px;
+} 
 
 .generate__generate__strength__boxes__item {
     width: 6px;

@@ -89,4 +89,22 @@
         letter-spacing: 0px;
     }
 
+    .generate__generate__strength__boxes__text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+
+    .generate__generate__button {
+        padding: 20.5px;
+        gap: 24px;
+    }
+
+    .generate__generate__button__text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
 }
