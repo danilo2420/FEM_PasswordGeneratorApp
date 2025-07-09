@@ -165,3 +165,16 @@
     align-items: center;
     gap: 16px;
 }
+
+/* Effects and animations */
+.slider:active::-webkit-slider-thumb,
+.slider::-webkit-slider-thumb:active {
+    border: solid var(--green200) 3px !important;
+    background-color: var(--grey850) !important; 
+}
+
+.slider:active::-moz-range-thumb, 
+.slider::-moz-range-thumb {
+    border: solid var(--green200) 3px !important;
+    background-color: var(--grey850) !important; 
+}
