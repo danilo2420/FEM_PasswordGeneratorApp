@@ -1,5 +1,26 @@
 
 
+// Copy to clipboard
+const copyIcon = document.querySelector('.password__copy__icon');
+const copyText = document.querySelector('.password__copy__text');
+const passwordElement = document.querySelector('.password__value');
+copyIcon.addEventListener('click', handleCopyIcon);
+
+let removeStyle = () => {};
+
+function handleCopyIcon() {
+    if (!passwordElement.classList.contains('password--disabled')) {
+        const password = passwordElement.innerText;
+        navigator.clipboard.writeText(password);
+        copyText.classList.remove('copyText--disabled');
+        clearTimeout(removeStyle);
+        removeStyle = setTimeout(() => {
+            copyText.classList.add('copyText--disabled');
+        }, 2000);
+    }
+}
+
+
 // Slider
 const slider = document.querySelector('.slider');
 const sliderOutput = document.querySelector('.generate__charLength__output__value');

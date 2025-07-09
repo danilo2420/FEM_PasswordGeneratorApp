@@ -77,6 +77,10 @@ body {
     color: var(--grey700);
 }
 
+.copyText--disabled {
+    visibility: hidden;
+}
+
 .checkbox--active {
     background-color: var(--green200);
     border-color: var(--green200) !important;

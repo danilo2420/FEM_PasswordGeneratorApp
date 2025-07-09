@@ -30,6 +30,7 @@
 
 .password__copy__icon {
     width: 17.5px;
+    cursor: pointer;
 }
 
 /* Form */
