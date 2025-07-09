@@ -148,3 +148,15 @@
 
     border: solid var(--white) 2px;
 }
+
+.generate__generate__button {
+    padding: 18px;
+
+    background-color: var(--green200);
+    color: var(--grey800);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
