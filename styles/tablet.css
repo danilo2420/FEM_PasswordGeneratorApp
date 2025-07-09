@@ -1,0 +1,92 @@
+@import 'mobile.css';
+
+@media (min-width: 650px) {
+    .container {
+        margin: 133px 114px;
+        gap: 16px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+
+    .password {
+        padding: 19px 32px;
+    }
+
+    .password__value {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0px;
+    }
+
+    .password__copy {
+        gap: 16px;
+    }
+
+    .password__copy__text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .password__copy__icon {
+        width: 21px;
+    }
+
+    .generate {
+        padding: 24px 32px;
+    }
+
+    .generate__charLength {
+        gap: 16px;
+    }
+
+    .generate__charLength__output__label {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .generate__charLength__output__value {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0px;
+    }
+
+    .generate__options__item {
+        gap: 24px;
+    }
+
+    .generate__options__item__text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .generate__generate {
+        gap: 32px;
+    }
+
+    .generate__generate__strength {
+        padding: 20px 32px;
+    }
+
+    .generate__generate__strength__text {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+}
