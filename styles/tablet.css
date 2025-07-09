@@ -1,6 +1,7 @@
 @import 'mobile.css';
 
 @media (min-width: 650px) {
+
     .container {
         margin: 133px 114px;
         gap: 16px;
@@ -106,5 +107,17 @@
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 0px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 540px;
     }
 }
