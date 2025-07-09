@@ -2,8 +2,14 @@
 
 // Slider
 const slider = document.querySelector('.slider');
-setSliderStyle();
-slider.addEventListener('input', setSliderStyle);
+const sliderOutput = document.querySelector('.generate__charLength__output__value');
+handleSlider();
+slider.addEventListener('input', handleSlider);
+
+function handleSlider() {
+    setSliderStyle();
+    setOutputNumber();
+}
 
 function setSliderStyle() {
     const maxValue = slider.max;
@@ -13,6 +19,12 @@ function setSliderStyle() {
     slider.style.background = 
         `linear-gradient(to right, #A4FFAF ${valPercent}%, #18171F ${valPercent}%)`;
 }
+
+function setOutputNumber() {
+    const value = slider.value;
+    sliderOutput.textContent = value;
+}
+
 
 // Checkboxes
 const checkboxes = document.querySelectorAll('.generate__options__item__checkbox');
