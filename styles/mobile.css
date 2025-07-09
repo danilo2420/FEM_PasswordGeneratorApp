@@ -116,3 +116,35 @@
 .generate__options__item__checkbox img {
     visibility: hidden;
 }
+
+/* Bottom section */
+.generate__generate {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.generate__generate__strength {
+    background-color: var(--grey850);
+    padding: 14px 17px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generate__generate__strength__text {
+    color: var(--grey600);
+}
+
+.generate__generate__strength__boxes {
+    display: flex;
+    gap: 8px;
+}
+
+.generate__generate__strength__boxes__item {
+    width: 6px;
+    height: 24px;
+
+    border: solid var(--white) 2px;
+}
