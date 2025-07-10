@@ -10,7 +10,7 @@ const strengthText = document.querySelector('.generate__generate__strength__boxe
 const setLowercase = 'abcdefghijklmnopqrstuvwxyz';
 const setUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const setNumbers = '0123456789';
-const setSymbols = '!"·$%&/()=?¿+ç-.,';
+const setSymbols = '~`! @#$%^&*()_-+={[}]|\:;"\'<,>.?/';
 
 function generatePassword() {
     // if (btnGenerate is disabled) return;
