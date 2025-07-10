@@ -14,6 +14,7 @@ const setSymbols = '!"·$%&/()=?¿+ç-.,';
 
 function generatePassword() {
     // if (btnGenerate is disabled) return;
+    if (btnGenerate.classList.contains('button--disabled')) return;
 
     // Get configuration
     const charsNumber = slider.value;
@@ -43,6 +44,8 @@ function generatePassword() {
                 break;
         }
     });
+
+    console.log(set);
 
     // Create password
     let result = '';
@@ -135,3 +138,4 @@ function aux(className) {
 }
 
 setStrengthState();
+setButtonState();

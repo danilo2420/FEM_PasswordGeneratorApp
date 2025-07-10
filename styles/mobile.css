@@ -20,6 +20,12 @@
     align-items: center;
 }
 
+.password__value {
+    
+    max-width: calc(100% - 110px);
+    overflow-wrap: break-word;
+}
+
 .password__copy {
     display: flex;
     align-items: center;
