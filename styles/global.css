@@ -98,3 +98,30 @@ body {
 .button--disabled {
     opacity: 0.4;
 }
+
+/* Modifiers: Strength boxes */
+.strength--tooweak .box1 {
+    border-color: var(--red500);
+    background-color: var(--red500);
+}
+
+.strength--weak .box1, 
+.strength--weak .box2 {
+    border-color: var(--orange400);
+    background-color: var(--orange400);
+}
+
+.strength--medium .box1, 
+.strength--medium .box2,
+.strength--medium .box3 {
+    border-color: var(--yellow300);
+    background-color: var(--yellow300);
+}
+
+.strength--strong .box1, 
+.strength--strong .box2,
+.strength--strong .box3,
+.strength--strong .box4 {
+    border-color: var(--green200);
+    background-color: var(--green200);
+}
