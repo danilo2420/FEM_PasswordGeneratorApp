@@ -1,8 +1,9 @@
 // Elements
 const btnGenerate = document.querySelector('.generate__generate__button');
 const checkBoxes = document.querySelectorAll('.generate__options__item__checkbox');
-// Functions
 
+const strengthElement = document.querySelector('.generate__generate__strength__boxes');
+const strengthText = document.querySelector('.generate__generate__strength__boxes__text');
 
 /* UI EVENTS */
 // Generate password
@@ -71,3 +72,66 @@ setButtonState = function() {
     }
     btnGenerate.classList.add('button--disabled');
 }
+
+// Set information about password's strength
+setStrengthState = function() {
+    const sliderValue = slider.value;
+
+    let checkboxN = 0;
+    for (cb of checkBoxes) {
+        if (cb.classList.contains('checkbox--active')) {
+            checkboxN++;
+        }
+    }
+
+    if (sliderValue < 5) {
+        setStrengthStateStyle(0);
+    } else if (sliderValue < 10) {
+        if (checkboxN < 2)
+            setStrengthStateStyle(0);
+        else
+            setStrengthStateStyle(1); 
+    } else if (sliderValue < 15) {
+        if (checkboxN < 3)
+            setStrengthStateStyle(1);
+        else
+            setStrengthStateStyle(2); 
+    } else {
+        if (checkboxN < 3) 
+            setStrengthStateStyle(2);
+        else 
+            setStrengthStateStyle(3);
+    }
+}
+
+function setStrengthStateStyle(strength) {
+    switch (strength) {
+        case 0:
+            strengthText.innerHTML = 'TOO WEAK!';
+            aux('strength--tooweak');
+            break;
+        case 1:
+            strengthText.innerHTML = 'WEAK';
+            aux('strength--weak');
+            break;
+        case 2:
+            strengthText.innerHTML = 'MEDIUM';
+            aux('strength--medium');
+            break;
+        case 3:
+            strengthText.innerHTML = 'STRONG';
+            aux('strength--strong');
+            break;
+    }
+}
+
+function aux(className) {
+    strengthElement.classList.remove('strength--tooweak');
+    strengthElement.classList.remove('strength--weak');
+    strengthElement.classList.remove('strength--medium');
+    strengthElement.classList.remove('strength--strong');
+
+    strengthElement.classList.add(className);
+}
+
+setStrengthState();

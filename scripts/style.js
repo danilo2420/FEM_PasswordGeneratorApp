@@ -25,6 +25,7 @@ function handleCopyIcon() {
 const slider = document.querySelector('.slider');
 const sliderOutput = document.querySelector('.generate__charLength__output__value');
 let setButtonState = function() {};
+let setStrengthState = function() {};
 handleSlider();
 slider.addEventListener('input', handleSlider);
 
@@ -32,6 +33,7 @@ function handleSlider() {
     setSliderStyle();
     setOutputNumber();
     setButtonState();
+    setStrengthState();
 }
 
 function setSliderStyle() {
@@ -55,5 +57,6 @@ function handleCheckbox(checkbox) {
     checkbox.addEventListener('click', () => {
         checkbox.classList.toggle('checkbox--active');
         setButtonState();
+        setStrengthState();
     })
 } 
