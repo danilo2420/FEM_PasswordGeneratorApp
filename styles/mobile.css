@@ -7,6 +7,19 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
+    animation: slideIn 1.2s ease-in-out 0s 1;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .title {
@@ -156,6 +169,7 @@
     align-items: center;
     gap: 8px;
 }
+
 .generate__generate__strength__boxes__text {
     margin-right: 8px;
 } 
@@ -165,6 +179,10 @@
     height: 24px;
 
     border: solid var(--white) 2px;
+
+    transition:
+        background-color 0.3s,
+        border-color 0.3s;
 }
 
 .generate__generate__button {
@@ -182,12 +200,12 @@
     cursor: pointer;
 }
 
-.generate__generate__button:active {
+.generate__generate__button:not(.button--disabled):active {
     background-color: transparent;
     color: var(--green200);
 }
 
-.generate__generate__button:active
+.generate__generate__button:not(.button--disabled):active
 .generate__generate__button__icon {
     content: url('../assets/images/icon-arrow-right-green.svg');
 }
