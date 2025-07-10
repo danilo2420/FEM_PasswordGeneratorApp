@@ -94,3 +94,7 @@ body {
 .checkbox--active img {
     visibility: visible !important;
 }
+
+.button--disabled {
+    opacity: 0.4;
+}

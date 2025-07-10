@@ -54,3 +54,20 @@ function generatePassword() {
     passwordElement.innerHTML = result;
     passwordElement.classList.remove('password--disabled');
 }
+
+// Enable/disable button
+setButtonState = function() {
+    btnGenerate.classList.remove('button--disabled');
+
+    const sliderValue = slider.value;
+    if (sliderValue == 0) {
+        btnGenerate.classList.add('button--disabled');
+        return;
+    }
+    for (cb of checkBoxes) { 
+        if (cb.classList.contains('checkbox--active')) {
+            return;
+        }
+    }
+    btnGenerate.classList.add('button--disabled');
+}

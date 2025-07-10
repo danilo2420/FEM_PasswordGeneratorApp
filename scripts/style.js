@@ -24,12 +24,14 @@ function handleCopyIcon() {
 // Slider
 const slider = document.querySelector('.slider');
 const sliderOutput = document.querySelector('.generate__charLength__output__value');
+let setButtonState = function() {};
 handleSlider();
 slider.addEventListener('input', handleSlider);
 
 function handleSlider() {
     setSliderStyle();
     setOutputNumber();
+    setButtonState();
 }
 
 function setSliderStyle() {
@@ -46,12 +48,12 @@ function setOutputNumber() {
     sliderOutput.textContent = value;
 }
 
-
 // Checkboxes
 const checkboxes = document.querySelectorAll('.generate__options__item__checkbox');
 checkboxes.forEach(handleCheckbox);
 function handleCheckbox(checkbox) {
     checkbox.addEventListener('click', () => {
         checkbox.classList.toggle('checkbox--active');
+        setButtonState();
     })
 } 
