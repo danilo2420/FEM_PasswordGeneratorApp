@@ -54,7 +54,7 @@ function setOutputNumber() {
 const checkboxes = document.querySelectorAll('.generate__options__item__checkbox');
 checkboxes.forEach(handleCheckbox);
 function handleCheckbox(checkbox) {
-    checkbox.addEventListener('click', () => {
+    checkbox.parentElement.addEventListener('click', () => {
         checkbox.classList.toggle('checkbox--active');
         setButtonState();
         setStrengthState();

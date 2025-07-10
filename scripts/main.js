@@ -45,8 +45,6 @@ function generatePassword() {
         }
     });
 
-    console.log(set);
-
     // Create password
     let result = '';
     for (let i = 0; i < charsNumber; i++) {

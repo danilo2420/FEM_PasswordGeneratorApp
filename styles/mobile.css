@@ -122,6 +122,8 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+    cursor: pointer;
 }
 
 .generate__options__item__checkbox {
@@ -129,14 +131,13 @@
     width: 16px;
     height: 16px;
 
-    cursor: pointer;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.generate__options__item__checkbox:active {
+.generate__options__item:active 
+.generate__options__item__checkbox {
     border-color: var(--green200);
 }
 
