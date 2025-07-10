@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="styles/tablet.css">
   <script defer src="scripts/style.js"></script>
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
   <div class="container">
@@ -42,25 +43,25 @@
       <!-- # Checkboxes -->
       <div class="generate__options">
         <div class="generate__options__item tp4">
-          <div class="generate__options__item__checkbox checkbox--active">
+          <div class="generate__options__item__checkbox checkbox--active" data-input="uppercase">
             <img src="assets/images/icon-check.svg" alt="">
           </div>
           <div class="generate__options__item__text">Include Uppercase Letters</div>
         </div>
         <div class="generate__options__item tp4">
-          <div class="generate__options__item__checkbox">
+          <div class="generate__options__item__checkbox"  data-input="lowecase">
             <img src="assets/images/icon-check.svg" alt="">
           </div>
           <div class="generate__options__item__text">Include Lowercase Letters</div>
         </div>
         <div class="generate__options__item tp4">
-          <div class="generate__options__item__checkbox">
+          <div class="generate__options__item__checkbox"  data-input="numbers">
             <img src="assets/images/icon-check.svg" alt="">
           </div>
           <div class="generate__options__item__text">Include Numbers</div>
         </div>
         <div class="generate__options__item tp4">
-          <div class="generate__options__item__checkbox">
+          <div class="generate__options__item__checkbox" data-input="symbols">
             <img src="assets/images/icon-check.svg" alt="">
           </div>
           <div class="generate__options__item__text">Include Symbols</div>
@@ -79,7 +80,7 @@
             <div class="generate__generate__strength__boxes__item box4"></div>
           </div>
         </div>
-        <div class="generate__generate__button">
+        <div class="generate__generate__button" onclick="generatePassword()">
           <div class="generate__generate__button__text tp4">GENERATE</div>
           <img src="assets/images/icon-arrow-right.svg" alt="">
         </div>
