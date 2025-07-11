@@ -10,7 +10,7 @@ const strengthText = document.querySelector('.generate__generate__strength__boxe
 const setLowercase = 'abcdefghijklmnopqrstuvwxyz';
 const setUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const setNumbers = '0123456789';
-const setSymbols = '~`! @#$%^&*()_-+={[}]|\:;"\'<,>.?/';
+const setSymbols = '~`!@#$%^&*()_-+={[}]|\\:;"\'<,>.?/';
 
 function generatePassword() {
     // if (btnGenerate is disabled) return;
@@ -45,16 +45,36 @@ function generatePassword() {
         }
     });
 
-    // Create password
-    let result = '';
-    for (let i = 0; i < charsNumber; i++) {
-        const nextChar = set.charAt(Math.random() * set.length);
-        result += nextChar;
+    setPasswordAnimation(charsNumber, set);
+}
+
+let fn = function() {};
+function setPasswordAnimation(charsNumber, set) {
+    copyIcon.classList.add('copyIcon--disabled');
+    clearInterval(fn);
+
+    counter = 0;
+    let setPassword = () => {
+        passwordElement.classList.remove('password--disabled');
+
+        // Create password
+        let result = '';
+        for (let i = 0; i < charsNumber; i++) {
+            const nextChar = set.charAt(Math.random() * set.length);
+            result += nextChar;
+        }
+
+        // Set value as output
+        passwordElement.innerHTML = result;
+
+        counter++;
+        if (counter >= 10) {
+            clearInterval(fn);
+            copyIcon.classList.remove('copyIcon--disabled');
+        }
     }
 
-    // Set value as output
-    passwordElement.innerHTML = result;
-    passwordElement.classList.remove('password--disabled');
+    fn = setInterval(setPassword, 80);
 }
 
 // Enable/disable button
